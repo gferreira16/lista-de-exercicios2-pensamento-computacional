@@ -1,0 +1,11 @@
+Crie um programa que solicite um número inteiro positivo e exiba uma contagem regressiva desse número até zero.
+'''
+
+numero = int(input("digite um numero para contagem regressiva: "))
+
+if numero <= 0:
+    print("erro! numero invaldido digite um numero valido")
+else:
+    print("contagem regressiva:")
+    for i in range(n, -1, -1):
+        print(i)
