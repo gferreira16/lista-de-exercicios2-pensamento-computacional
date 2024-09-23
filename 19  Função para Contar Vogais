@@ -1,0 +1,19 @@
+Escreva uma função contar_vogais(texto) que receba uma string e retorne o número de vogais presentes no texto. 
+Peça ao usuário para digitar uma frase e exiba o resultado.
+'''
+
+def contar_vogais(texto):
+    
+    vogais = "aeiouAEIOU"
+    contador = 0
+
+    for letra in texto:
+        if letra in vogais:
+            contador += 1
+            
+    return contador
+
+frase = input("Digite uma frase: ")
+
+numero_vogais = contar_vogais(frase)
+print(f"O número de vogais na frase é: {numero_vogais}")
