@@ -1,0 +1,13 @@
+Escreva um programa que solicite um número inteiro positivo n do usuário e calcule o fatorial de n utilizando um laço de repetição.
+'''
+
+n = int(input("digite um numero inteiro: "))
+
+if n <= 0:
+    print("por favor digite um numero valido!")
+else:
+    fatorial = 1
+    for i in range(1, n + 1):
+        fatorial *= 1
+
+    print(f"o fatorial de {n} é: {fatorial}")
