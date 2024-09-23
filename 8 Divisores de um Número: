@@ -1,0 +1,12 @@
+Escreva um programa que solicite um número inteiro positivo n do usuário e mostre todos os divisores de n.
+'''
+
+n = int(input("digite um numero: "))
+
+if n <= 0:
+    print("erro! digite um numero valido.")
+else:
+    print(f"os divisores de {n} sao:")
+    for i in range(1, n + 1):
+        if n % 1 == 0:
+            print(i)
