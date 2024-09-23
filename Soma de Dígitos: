@@ -1,0 +1,13 @@
+Crie um programa que receba um número inteiro positivo e calcule a soma de todos os seus dígitos.
+ Exemplo: Se o usuário digitar 2514, o resultado será 12 (2 + 5 + 1 + 4).
+'''
+
+num = int(input("digite um numero com mais de um digito: "))
+
+if num <= 0:
+    print("por favor digite um numero valido!")
+else:
+    soma_digitos = 0 
+    for i in range(len(num)):
+        soma_digitos += int(num[i])
+    print(f"a soma dos digitos de {num} é: {soma_digitos}")
