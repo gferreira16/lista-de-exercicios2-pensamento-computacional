@@ -1,0 +1,13 @@
+Desenvolva um programa que solicite dois números inteiros positivos a e b.
+ O programa deve somar todos os números entre a e b (inclusive) que sejam divisíveis por 3 e mostrar o resultado.
+'''
+
+a = int(input("digite um numero inteiros positivos:"))
+b = int(input("digite o segundo numero inteiro positivo: "))
+soma = 0 
+
+for num in range(a, b + 1):
+    if num % 3 == 0:
+        soma += num 
+
+print(f"a soma dos numros a e b sao {soma}")
