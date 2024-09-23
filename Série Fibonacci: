@@ -1,0 +1,12 @@
+Faça um programa que peça ao usuário um número inteiro n e exiba os n primeiros números da sequência de Fibonacci.
+'''
+
+n = int(input("digite um numero: "))
+
+if n <= 0:
+    print("erro digite um numero valido!")
+else:
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=' ')
+        a, b = b, a + b
