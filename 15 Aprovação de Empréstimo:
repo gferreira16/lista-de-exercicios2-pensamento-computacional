@@ -1,0 +1,18 @@
+Crie um programa que simule a aprovação de um empréstimo. 
+O usuário deve informar o valor do empréstimo, a taxa de juros mensal e o número de meses para pagar.
+O programa deve calcular o valor da prestação mensal e verificar se o valor é maior que 30% do salário do usuário.
+'''
+
+valor_emprestimo = float(input("digite o valor que deseja para o emprestimo: "))
+taxa_juros = float(input("digite a taxa de juros mensal (em %): ")) / 100
+numero_meses = int(input("digite o numero de meses para pagar: "))
+salario = float(input("digite o seu salario (em $): "))
+
+prestacao_mensal = (valor_emprestimo * taxa_juros * (1 + taxa_juros) ** numero_meses) / ((1 + taxa_juros) ** numero_meses - 1)
+limite = salario * 0.3
+
+print(f"valor do emprestimo mensal: R$ {prestacao_mensal}")
+if prestacao_mensal > limite:
+    print("emprestimo negado: a prestaçao mensal é maior que 30% do seu salario.")
+else:
+    print("emprestimo aprovado!")
