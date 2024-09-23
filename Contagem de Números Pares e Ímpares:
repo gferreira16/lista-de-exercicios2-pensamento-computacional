@@ -1,0 +1,15 @@
+Escreva um programa que receba um número inteiro positivo do usuário e 
+exiba todos os números pares e ímpares de 1 até .nn
+'''
+
+num = int(input("digite o numero: "))
+
+print("numeros pares:")
+for i in range(1, num + 1):
+    if i % 2 == 0:
+        print(i)
+
+print("numeros impares:")
+for i in range(1, num + 1):
+    if i % 2 != 0:
+        print(i)
