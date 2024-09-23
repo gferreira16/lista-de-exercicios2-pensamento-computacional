@@ -1,0 +1,18 @@
+Desenvolva um programa que receba um número inteiro positivo do usuário e verifique se ele é um número primo.
+'''
+
+num = int(input("digite um numero: "))
+
+if num < 2:
+    print(f"numero {num} nao é primo")
+else:
+    eh_primo = True 
+    for i in range(2, int(num**0.5) + 1):
+        if num % 2 == 0:
+            eh_primo = False
+            break 
+
+    if eh_primo:
+        print(f"numero {num} é primo")
+    else:
+        print(f"numero {num} nao é primo")
