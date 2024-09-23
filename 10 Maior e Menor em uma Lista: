@@ -1,0 +1,18 @@
+
+numeros = []
+
+for i in range(5):
+    numero = int(input(f"digite o {i + 1} numero inteiro: "))
+    numeros.append(numero)
+
+mairo = numero[0]
+menor = numero[0]
+for num in numero:
+    if num  > numero:
+        maior = num
+    if num < numero:
+        menor = num
+
+print(f"o maior numero é {maior}")
+print(f"o menor numero é {menor}")
+
