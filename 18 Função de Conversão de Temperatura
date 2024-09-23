@@ -1,0 +1,20 @@
+Desenvolva uma função converter_para_fahrenheit(celsius) 
+que receba uma temperatura em Celsius e retorne a temperatura equivalente em Fahrenheit. 
+Teste a função com diferentes valores de temperatura fornecidos pelo usuário.
+'''
+
+def converter_para_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+while True:
+    entrada = input("Digite a temperatura em Celsius (ou 'sair' para encerrar): ")
+
+    if entrada.lower() == 'sair':
+        break
+    
+    try:
+        celsius = float(entrada)
+        fahrenheit = converter_para_fahrenheit(celsius)
+        print(f"{celsius:.2f}°C é igual a {fahrenheit:.2f}°F")
+    except ValueError:
+        print("Por favor, digite um número válido ou 'sair' para encerrar.")
